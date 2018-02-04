@@ -7,11 +7,8 @@ $(document).ready(function () {
         autoplaySpeed: 2000,
         draggable: false
     });
-    mobileMenu();
-});
 
-function mobileMenu() {
     $(".hidden_menu_holder").click(function () {
         $(".nav").toggleClass('nav-active');
     });
-}
+});
