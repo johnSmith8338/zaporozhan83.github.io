@@ -1,0 +1,63 @@
+.nav-holder {
+    margin: 0 0 2rem;
+    position: relative;
+}
+
+#nav {
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: $font-nav;
+    color: $color-white;
+    font-weight: 600;
+    font-size: 3rem;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    @include media('<tablet') {
+        width: 100%;
+    }
+    @include media('<=phone') {
+        flex-direction: column;
+    }
+}
+
+.nav-item {
+    margin: 0 0 1.5rem;
+    a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        transition: all 300ms linear;
+        &:hover {
+            color: $color-grey;
+        }
+    }
+}
+
+.burger-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    .menu-dash {
+        width: 30px;
+        height: 5px;
+        border-radius: 2px;
+        margin: 0 0 5px;
+        background-color: $bg-white;
+    }
+}
+
+.logo-holder {
+    width: 15rem;
+    @include media('<tablet') {
+        order: -1;
+    }
+    img {
+        display: block;
+    }
+}

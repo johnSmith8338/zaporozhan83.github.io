@@ -1,0 +1,13 @@
+@mixin limiter{
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@mixin clearfix {
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}

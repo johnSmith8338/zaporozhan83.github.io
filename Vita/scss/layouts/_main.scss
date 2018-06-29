@@ -1,0 +1,140 @@
+.main-wrapper {
+    @include limiter;
+    background-color: $bg-white;
+    display: flex;
+    flex-direction: column;
+}
+
+.slider-holder {
+    padding: 5rem 0 0;
+    margin: 0 0 5rem;
+    @include media('<tablet') {
+        margin: 0 0 2rem;
+    }
+}
+
+.slider-img {
+    padding: 1rem;
+}
+
+#about {
+    margin: 0 0 5rem;
+    padding: 2rem 0 0;
+}
+
+.about-img {
+    width: 40%;
+    float: left;
+    margin: 0 2rem 2rem 0;
+    @include media('<tablet') {
+        float: none;
+        margin: 0 0 2rem;
+        width: 100%;
+    }
+}
+
+.section-txt {
+    line-height: 2.8rem;
+}
+
+#service {
+    margin: 0 0 5rem;
+    padding: 2rem 0 0;
+}
+
+.img-holder-list {
+    column-count: 5;
+    -moz-column-count: 5;
+    -webkit-column-count: 5;
+    column-gap: 2rem;
+    -moz-column-gap: 2rem;
+    -webkit-column-gap: 2rem;
+    padding: 2rem 0 0;
+    @include media('<=desktop') {
+        column-count: 4;
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+    }
+    @include media('<=tablet') {
+        column-count: 3;
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+    }
+    @include media('<=phone') {
+        column-count: 1;
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+    }
+}
+
+.img-holder-item {
+    margin: 0 0 2rem;
+}
+
+.map-gallery {
+    margin: 0 0 5rem;
+    @include media('<tablet') {
+        margin: 0;
+    }
+}
+
+#map-holder {
+    margin: 0 0 5rem;
+    display: flex;
+    flex-direction: column;
+    #map {
+        height: 30rem;
+        margin: 0 0 2rem;
+    }
+}
+
+.map-wrapper {
+    width: 100%;
+    #map {
+        height: 45rem;
+        margin: 0 0 2rem;
+    }
+    ul {
+        list-style: none;
+        margin: 0 0 1rem;
+        @include media('<tablet') {
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            padding: 1rem 0;
+        }
+    }
+}
+
+.trip-item-txt {
+    font-weight: 600;
+}
+
+.trip-subitem-txt {
+    font-weight: 500;
+}
+
+#gallery-holder {
+    margin: 0 0 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.photo-holder {
+    margin: 0 0 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    .img-holder {
+        width: 33.333%;
+        @include media('<tablet') {
+            width: 50%;
+        }
+        @include media('<=phone') {
+            width: 100%;
+        }
+        img {
+            display: block;
+        }
+    }
+}

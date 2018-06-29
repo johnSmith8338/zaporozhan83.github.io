@@ -1,0 +1,10 @@
+#header {
+    padding: 2rem 0;
+    @include media('<=phone') {
+        padding: 2rem 0 0;
+    }
+}
+
+.header-wrapper {
+    @include limiter;
+}

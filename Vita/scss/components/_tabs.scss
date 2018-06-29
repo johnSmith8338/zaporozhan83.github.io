@@ -1,0 +1,93 @@
+.service-tabs {
+    @include media('<tablet') {
+        display: flex;
+    }
+}
+
+.tabs-caption {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 6rem;
+    color: $color-grey;
+    @include media('<=1200px') {
+        font-size: 5rem;
+    }
+    @include media('<desktop') {
+        font-size: 4rem;
+    }
+    @include media('<tablet') {
+        flex-direction: column;
+        width: 20%;
+    }
+    li {
+        padding: 1rem 4rem;
+        border-right: 2px solid transparent;
+        border-left: 2px solid transparent;
+        position: relative;
+        cursor: pointer;
+        @include media('<=1200px') {
+            padding: 1rem 3rem;
+        }
+        @include media('<desktop') {
+            padding: 1rem 2rem;
+        }
+        @include media('<=phone') {
+            padding: 0.5rem;
+        }
+        span {
+            display: block;
+        }
+    }
+}
+
+li.tab-active {
+    color: $color-yellow;
+    background-color: $bg-green;
+    border: 2px solid $color-grey;
+    &:before {
+        content: '';
+        position: absolute;
+        height: 6px;
+        bottom: -4px;
+        right: 0px;
+        left: 0px;
+        background: $color-green;
+        @include media('<tablet') {
+            display: none;
+        }
+    }
+    &:after {
+        content: '';
+        @include media('<tablet') {
+            background-color: $bg-green;
+            width: 6px;
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            right: -4px;
+        }
+    }
+}
+
+.tabs-content {
+    display: none;
+}
+
+.tabs-content.tab-active {
+    display: block;
+    padding: 3rem;
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    background: $color-green;
+    border: 2px solid $color-grey;
+    @include media('<tablet') {
+        width: 80%;
+    }
+    @include media('<=phone') {
+        font-size: 1.8rem;
+    }
+}

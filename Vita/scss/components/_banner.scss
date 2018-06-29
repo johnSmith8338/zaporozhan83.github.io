@@ -1,0 +1,20 @@
+.banner-holder {
+    margin: 0 auto;
+    position: relative;
+    img {
+        display: block;
+    }
+}
+
+.banner-title {
+    font-size: 9rem;
+    text-transform: uppercase;
+    color: $color-yellow;
+    font-family: $font-title;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    @include media('<=phone'){
+        font-size: 5rem;
+    }
+}

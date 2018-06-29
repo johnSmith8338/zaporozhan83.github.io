@@ -1,0 +1,40 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    font: 1.6rem $font;
+    color: $color-grey;
+    background-color: $bg-white;
+    background: linear-gradient( #3399cc, #eaeaea, #336666, #666699, #eaeaea, #cc9966 );
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+#page {
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0 0 10px;
+}
+
+.section-title{
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 3rem;
+}

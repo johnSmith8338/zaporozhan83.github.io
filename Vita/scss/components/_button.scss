@@ -1,0 +1,21 @@
+.button-more{
+    display: inline-block;
+    background-color: $bg-green;
+    border-radius: 5px;
+    align-self: flex-end;
+    a{
+        text-decoration: none;
+        color: $color-grey;
+        font-weight: 900;
+        display: block;
+        padding: 1rem 5rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: all 300ms linear;
+        &:hover{
+            background-color: mix(black,$color-green,30%);
+            color: $color-yellow;
+            border-radius: 5px;
+        }
+    }
+}
